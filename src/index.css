@@ -1,0 +1,35 @@
+.whole-pages-div {
+  width: 100%;
+  min-height: 100vh;
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20230715/pngtree-illustration-of-3d-money-conversion-concept-image_3883958.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whole-pages-div::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.774);
+  backdrop-filter: blur(14px);
+  z-index: -1;
+}
+
+.currencys-div {
+  width: 1024px;
+  z-index: 10;
+}
+@media (max-width: 1024px) {
+  .currencys-div {
+    width: 100%;
+  }
+}
